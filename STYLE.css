@@ -1,0 +1,398 @@
+
+/*CSS INICIO INDEX*/
+.body1{
+	background-image:url(IMG/FONDO.jpeg);
+	background-size:cover;
+	background-attachment: fiexd;
+	background-repeat:mo-repeat;
+	background-position:center;
+	min-height:100vh;
+	min-width:100vh;
+}
+
+.body1 p {
+   font-family: gotica;
+   color: blue;
+}
+/*degradado img fondo*/
+.body1:before{
+	content:"";
+	width:100%;
+	min-height:120vh;
+	position:absolute;
+	top:0;
+	left:0;
+	
+	
+	background:linear-gradient(90deg,#52c4df,#ad55c1);
+	
+	opacity:0.7;
+	z-index:-1;
+}
+
+/*fin degradado img fondo*/
+
+#menu {
+	background:#ffd700;
+	width: 1300px;
+	height:40px;
+	background-color:#ffd700;
+	border-radius:12px;
+}
+
+#menu ul {
+	list-style:none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu ul li{
+	float: left;
+}
+
+/*aqui se modifica el texto del menu en la caja*/
+#menu a{
+	text-decoration: none;
+	display: block;
+	font-family:verdana;
+	padding:12px 46px;
+	font-size: 19px;
+	color: #000000;
+}
+/*aqui se agrega la barra entre el menu*/
+.barra{
+	color:rgba(153,153,153,1);
+	padding:15px 0 0 0;
+}
+
+/*aqui se cambia todo en el movimiento entre tocar y dejar*/
+#menu a:hover{
+	color:#C6FF00;
+	background:rgba(0,0,0,0.2);
+	animation: 2s ms 1;
+}
+
+@keyframes ms{
+	0%{
+		opacity:0;
+		transform:scale(1.6);
+	}
+}
+
+/*aqui termina donde se cambia todo en el movimiento 
+entre tocar y dejar*/
+
+/*aqui se modifican todas las imagenes del menu principal*/
+.imgrueda{
+	width:180px;
+	heigth:120px;
+	float:left;
+	padding: 4px;
+	border-radius:16px;
+	margin-left:25px;
+}
+
+.img-div-center{
+	background-color:none;
+	border-radius:0px;
+	height:400px;
+	width:400px;
+	position:relative;
+	border-radius:150px;
+}
+
+.img-centro-vert-hor{
+	width:400px;
+	height:400px;
+	position:relative;
+	top:50%;
+	left:45%;
+	transform:translate(-50%, -50%)
+}
+
+marquee{
+	font-size:28px;
+	font-family:verdana;
+	color:#000;
+	text-shadow:1px 2px 2px #ffffff;
+}
+
+/*aqui se modifica el cuerpoinicio*/
+
+#ci{
+	font-family:verdana;
+	font-size: 23px;
+	color: #C6FF00;
+}
+
+h1{
+	font-size:30px;
+	font-family:verdana;
+	color:#000;
+}
+h2{
+	font-size:26px;
+	font-family:verdana;
+	color:#000;
+}
+/*CSS NECESITO UNA CHAMBITA CANCELADO*/
+.body2{
+	background:url(IMG/2.JPEG);
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+:root{
+	--color1:#f39b12;
+	--color2:#C13A2A;
+	--color3:#2C80B8;
+}
+
+.box-cards{
+	heigth:500px;
+	width:90%;
+	margin:80px auto;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+
+.box-cards .box{
+	background-color:#fff;
+	height:450px;
+	width:25%;
+	color:#fff;	
+}
+
+.box1{
+	border-top:8px solid var(--color1);
+	border-bottom:8px solid var(--color1);
+	transform:translateX(-28em);
+	animation:primero .5s linear forwards;
+}
+
+.box2{
+	border-top:8px solid var(--color2);
+	border-bottom:8px solid var(--color2);
+	transform:translateY(35em);
+	animation:primero .5s linear forwards;
+}
+
+.box3{
+	border-top:8px solid var(--color3);
+	border-bottom:8px solid var(--color3);
+	transform:translateX(28em);
+	animation:primero .5s linear forwards;
+}
+
+.box img{
+	height:300px;
+	width:85%;
+	object-fit:cover;
+}
+
+.box .botton{
+	padding:10px;
+	width:60%;
+	font-family:verdana;
+	text-align:center;
+	margin:-20px auto;
+	transition:.3s;
+	display:flex;
+	position:relative;
+	z-index:3;
+	font-weight:bold;
+	
+}
+
+.botton1{
+	background-color:var(--color1);
+}
+
+.botton2{
+	background-color:var(--color2);
+}
+
+.botton3{
+	background-color:var(--color3);
+}
+
+.box p{
+	font-family:verdana;
+	text-align:center;
+	color:black;
+	font-size:.9em;
+	width:80%;
+	margin:50px auto;
+	text-align:justify;
+}
+
+.box:hover .botton{
+	transform:rotate(-10deg);
+}
+
+@keyframes primero{
+	100%{
+		transform:translateX(0);
+	}
+}
+
+@keyframes segundo{
+	100%{
+		transform:translateY(0);
+	}
+}
+
+
+
+/*CSS C-QUIERES CHAMBIAR*/
+.body3{
+	
+	background:url(IMG/FONDO.JPEG);
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+*{
+	box-sizing:border-box;
+}
+
+
+.contenedor{
+	width:100%;
+	padding:15px;
+}
+
+.formulario{
+	background:#fff;
+	margin-top:200px;
+	padding:3px;
+}
+
+h1{
+	text-align:center;
+	color:#1a2537;
+	font-size:40px;
+}
+
+input[type="text"],
+input[type="password"]{
+	font-size:20px;
+	width:82%;
+	padding:10px;
+	border:none;
+}
+
+.input-contenedor{
+	margin-bottom:15px;
+	border:1px solid #aaa;
+}
+
+.icon{
+	min-width:50px;
+	text-align:center;
+	color:#999;
+}
+
+.button{
+	border:none;
+	width:100%;
+	color:white;
+	font-size:20px;
+	background:#1a2537;
+	padding:15px 20px;
+	border-radius:5px
+	cursor:pointer;
+}
+
+.button:hover{
+	background:cadetblue;
+}
+
+p{
+	text-align:center;
+}
+
+.link{
+	text-decoration:none;
+	color:#1a2537;
+	font-weight:600;
+}
+
+.link:hover{
+	color:cadetblue;
+}
+
+@media(min-width:768px)
+{
+	.formulario{
+		margin:auto;
+		width:500px;
+		margin-top:15px;
+		border-radius:20%;
+	}
+}
+
+
+
+/*CSS QUIENES SOMOS*/
+.body4{
+	background-image:url(IMG/FONDO.jpeg);
+	background-size:cover;
+	background-attachment: fiexd;
+	background-repeat:mo-repeat;
+	background-position:center;
+	min-height:100vh;
+	min-width:100vh;
+}
+
+.body4 p {
+	font-family:verdana;
+	font-size:17px;
+	text-align:left;
+	margin-left:20px;
+	margin-top:30px;
+	text-align:justify;
+	
+}
+
+.QUIENESSOMOS{
+	width:580px;
+	width:580px;
+	heigth:620px;
+	float:right;
+	padding: 10px;
+	border-radius:16px;
+	margin-left:20px;
+	margin-right:5px;
+	margin-top:30px;
+	
+}
+
+
+/*VOLVER BOTTON*/
+.VOLVER{
+	border:none;
+	width:100%;
+	color:white;
+	font-size:20px;
+	background:#1a2537;
+	padding:15px 20px;
+	cursor:pointer;
+	text-decoration:none;
+	font-family:verdana;
+	margin-top:20px;
+	border-radius:50%;
+	alig:center;
+}
+
+.VOLVER:hover{
+	background:orange;
+	color:black;
+	animation: 4s ms 1;
+}
+
+.qs{
+	margin-left:40%;
+}
+
