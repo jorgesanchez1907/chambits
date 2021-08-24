@@ -268,11 +268,31 @@ h2{
 
 /*CSS C-QUIERES CHAMBIAR*/
 .body3{
-	
-	background:url(IMG/FONDO.JPEG);
+	background-image:url(IMG/FONDO.jpeg);
 	background-size:cover;
-	background-attachment:fixed;
+	background-attachment: fiexd;
+	background-repeat:mo-repeat;
+	background-position:center;
+	min-height:100vh;
+	min-width:100vh;
 }
+
+
+.body3:before{
+	content:"";
+	width:100%;
+	min-height:120vh;
+	position:absolute;
+	top:0;
+	left:0;
+	
+	
+	background:linear-gradient(90deg,#52c4df,#ad55c1);
+	
+	opacity:0.7;
+	z-index:-1;
+}
+
 
 *{
 	box-sizing:border-box;
@@ -367,6 +387,23 @@ p{
 	min-width:100vh;
 }
 
+
+.body4:before{
+	content:"";
+	width:100%;
+	min-height:120vh;
+	position:absolute;
+	top:0;
+	left:0;
+	
+	
+	background:linear-gradient(90deg,#52c4df,#ad55c1);
+	
+	opacity:0.7;
+	z-index:-1;
+}
+
+
 .body4 p {
 	font-family:verdana;
 	font-size:17px;
@@ -416,4 +453,3 @@ p{
 .qs{
 	margin-left:40%;
 }
-
